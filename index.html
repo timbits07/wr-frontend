@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html x-ng-app="twrApp">
+<html ng-app="twrApp">
 <head>
 	<title>The Workday Release</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-	<script type="text/javascript" scr="javascript/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="sss/sss.min.js"></script>
+	<script type="text/javascript" src="javascript/main.js"></script>
+	<script type="text/javascript" src="javascript/app.js"></script>
 </head>
 <body>
+	<section id="wrapper">
+		<header>
+			<img id="logo" src="img/TWRheadernamelogo.jpg">
+			<nav>
+				<ul>
+					<li class="menu"><a href="#">HOME</a></li>
+					<li class="menu"><a href="http://theworkdayrelease.tumblr.com/">BLOG</a></li>
+					<li class="menu"><a href="#tour">TOUR</a></li>
+					<li class="menu"><a href="#media">MEDIA</a></li>
+					<li class="menu"><a href="http://theworkdayrelease.bigcartel.com/">STORE</a></li>
+					<li class="menu"><a href="#about">ABOUT</a></li>
+					<li class="menu"><a href="#contact">CONTACT</a></li>
+				</ul>
+			</nav>
+			<div class="slider">
+				<img src="img/topbanner1.jpg" />
+				<img src="img/topbanner2.jpg" />
+				<img src="img/simpledistancewebsitebanner.jpg" />
+			</div>
+		</header>
+		<div ng-view></div>
+		<footer>
+				<hr>
+				<p>&copy; The Workday Release. All Rights Reserved.</p>
+				<p>Website created by <a href="http://timstorey.me" target="_blank">Tim Storey</a></p>
+		</footer>
+		</section>
+		<div id="social">
+			<div id="socialbar">
+				<a href="http://facebook.com/theworkdayrelease" target="_blank"><div class="icon" id="facebookIcon"></div></a>
+				
 
+				<a href="http://twitter.com/workdayrelease" target="_blank"><div class="icon" id="twitterIcon"></div></a>
+				
+				
+				<a href="http://instagram.com/theworkdayrelease" target="_blank"><div class="icon" id="instagramIcon"></div></a>
+				
+				<a href="http://youtube.com/user/theworkdayrelease" target="_blank"><div class="icon" id="youtubeIcon"></div></a>
+			</div>
+		</div>
 </body>
 </html>

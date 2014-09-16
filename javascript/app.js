@@ -24,7 +24,15 @@ twrApp.config(function($routeProvider) {
       });
 });
 
-twrApp.controller('homeCtrl', function($scope){});
+twrApp.controller('homeCtrl', function($scope, $http){
+  $http({method: 'GET', url: 'http://twrblog.herokuapp.com/posts.json'}).
+  success(function(data, status, headers, config) {
+    $scope.post = data;
+  }).
+  error(function(data, status, headers, config) {
+    console.log("AJAX failed")
+  });
+});
 twrApp.controller('aboutCtrl', function($scope){});
 twrApp.controller('contactCtrl', function($scope){});
 twrApp.controller('mediaCtrl', function($scope){});

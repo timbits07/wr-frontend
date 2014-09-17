@@ -1,9 +1,9 @@
 <div id="instagram">
+	<h2>TWITTER</h2>
+	<a class="twitter-timeline" href="https://twitter.com/workdayrelease" data-widget-id="354002219932188672">Tweets by @workdayrelease</a>
 	<h2>INSTAGRAM</h2>
 	<!-- SnapWidget -->
 	<iframe src="http://snapwidget.com/in/?u=dGhld29ya2RheXJlbGVhc2V8aW58OTB8NHwzfHxub3w1fGZhZGVPdXR8b25TdGFydHx5ZXM=&v=23714" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:380px; height:285px"></iframe>
-	<h2>TWITTER</h2>
-	<a class="twitter-timeline" href="https://twitter.com/workdayrelease" data-widget-id="354002219932188672">Tweets by @workdayrelease</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<h2>UPCOMING TOUR DATES</h2>
 	<ul id="tour">
 		<li>8/15/2014 : The Grove | Anaheim, CA</li>
@@ -12,11 +12,13 @@
 		<li>8/20/2014 : House of Blues | Anaheim, CA</li>
 	</ul>
 </div><br>
-
 <div id="news">
 	<h2>NEWS</h2>
 	<h3>{{ post.posts[0].title }}</h3>
 	<p>{{ post.posts[0].created_at | date:'MM-dd-yyyy' }}</p>
 	<p>{{ post.posts[0].body }}</p>
 	<img src="{{ post.posts[0].picture_url }}">
+	<div>
+		<a href="http://theworkdayrelease.tumblr.com">Click here to visit the full blog.</a>
+	</div>
 </div>

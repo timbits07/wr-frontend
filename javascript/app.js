@@ -40,7 +40,6 @@ twrApp.controller('homeCtrl', function($scope, $http){
   error(function(data, status, headers, config) {
     console.log("AJAX failed")
   });
-  twitter();
 });
 twrApp.controller('aboutCtrl', function($scope){});
 twrApp.controller('contactCtrl', function($scope){});

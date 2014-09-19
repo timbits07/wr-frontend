@@ -40,6 +40,7 @@ twrApp.controller('homeCtrl', function($scope, $http){
   error(function(data, status, headers, config) {
     console.log("AJAX failed")
   });
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 });
 twrApp.controller('aboutCtrl', function($scope){});
 twrApp.controller('contactCtrl', function($scope){});

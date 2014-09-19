@@ -89,6 +89,7 @@ nav a:hover {
 
 .slider {
 	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 
@@ -177,15 +178,25 @@ PAGE: ABOUT
 PAGE: MEDIA
 ************************/
 
-#media {
+#insta {
 	max-width: 50%;
 	float: left;
-	margin: 65px 0 200px 0;
 }
 
-#media h2 {
+#insta h2, #youtube h2, #soundcloud h2 {
 	text-align: center;
 	padding-bottom: 15px;
+	font-family: 'Montserrat', serif;
+}
+
+#youtube {
+	float: right;
+	width: 50%;
+}
+
+#soundcloud {
+	margin-bottom: 30px;
+	margin-top: 20px;
 }
 
 
@@ -217,14 +228,14 @@ SOCIAL BAR
 	position: fixed;
 	right: 100px;
 	top: 0;
-	width: 50px;
-	height: 420px;
-	background-color: rgba(0, 0, 0, 0.7);
+	width: 40px;
+	height: 390px;
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .icon {
-	height: 35px;
-	margin: 7px 8px;
+	height: 25px;
+	margin: 10px 8px;
 
 }
 
@@ -242,5 +253,5 @@ footer {
 }
 
 footer hr {
-	max-width: 954px;
+	max-width: 900px;
 }

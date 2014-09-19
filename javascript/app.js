@@ -24,7 +24,7 @@ twrApp.config(function($routeProvider) {
       });
 });
 
-twrApp.controller('homeCtrl', function($scope, $http){
+twrApp.controller('homeCtrl', function($scope, $http, $timeout){
   $http({method: 'GET', url: 'http://twrblog.herokuapp.com/posts.json'}).
   success(function(data, status, headers, config) {
     $scope.post = data;
@@ -32,7 +32,7 @@ twrApp.controller('homeCtrl', function($scope, $http){
   error(function(data, status, headers, config) {
     console.log("AJAX failed")
   });
-  $http({method: 'GET', url: 'http://api.bandsintown.com/artists/theworkdayrelease/events.json?api_version=2.0&app_id=twr_site'}).
+  $http({method: 'GET', url: 'http://api.bandsintown.com/artists/the%20workday%20release/events.json?api_version=2.0&app_id=twr_site'}).
   success(function(data, status, headers, config) {
     $scope.shows = data;
     console.log(data)
@@ -40,9 +40,17 @@ twrApp.controller('homeCtrl', function($scope, $http){
   error(function(data, status, headers, config) {
     console.log("AJAX failed")
   });
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  //This allows the twitter widget to reload when navigating back to hom through ng-routes
+  $timeout = twttr.widgets.load();
 });
 twrApp.controller('aboutCtrl', function($scope){});
 twrApp.controller('contactCtrl', function($scope){});
 twrApp.controller('mediaCtrl', function($scope){});
-twrApp.controller('tourCtrl', function($scope){});
+twrApp.controller('tourCtrl', function($scope){
+  this.addjQueryToPartial = function(){
+   angular.element('a').click(function() //angular way of accessing jQuery
+   {
+     alert('yo');
+   });
+ }
+});

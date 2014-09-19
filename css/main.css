@@ -95,7 +95,7 @@ nav a:hover {
 
 
 /************************
-NEWS
+PAGE: HOME
 ************************/
 #news {
 	float: left;
@@ -111,12 +111,6 @@ NEWS
 #news h3 {
 	font-weight: bold;
 }
-
-
-
-/************************
-INSTAGRAM
-************************/
 
 #instagram {
 	float: right;
@@ -135,14 +129,13 @@ INSTAGRAM
 	padding: 0;
 }
 
-
-
-/************************
-TOUR
-************************/
-
 #tour {
 	font-size: 13px;
+}
+
+#blog_button a {
+	text-decoration: none;
+	color: #000;
 }
 
 /************************

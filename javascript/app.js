@@ -32,7 +32,7 @@ twrApp.controller('homeCtrl', function($scope, $http, $timeout){
   error(function(data, status, headers, config) {
     console.log("AJAX failed")
   });
-  $http({method: 'GET', url: 'http://api.bandsintown.com/artists/the%20workday%20release/events.json?api_version=2.0&app_id=twr_site'}).
+  $http({method: 'GET', url: 'http://api.bandsintown.com/artists/the%20workday%20release/events.json?callback=?api_version=2.0&app_id=twr_site'}).
   success(function(data, status, headers, config) {
     $scope.shows = data;
     console.log(data)
@@ -46,11 +46,4 @@ twrApp.controller('homeCtrl', function($scope, $http, $timeout){
 twrApp.controller('aboutCtrl', function($scope){});
 twrApp.controller('contactCtrl', function($scope){});
 twrApp.controller('mediaCtrl', function($scope){});
-twrApp.controller('tourCtrl', function($scope){
-  this.addjQueryToPartial = function(){
-   angular.element('a').click(function() //angular way of accessing jQuery
-   {
-     alert('yo');
-   });
- }
-});
+twrApp.controller('tourCtrl', function($scope){});

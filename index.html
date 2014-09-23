@@ -15,35 +15,8 @@
 	<script type="text/javascript" src="javascript/app.js"></script>
 </head>
 <body>
-	<section id="wrapper">
-		<header>
-			<img id="logo" src="img/name.png">
-			<hr/>
-			<nav>
-				<ul>
-					<li class="menu"><a href="#">HOME</a></li>
-					<li class="menu"><a href="http://theworkdayrelease.tumblr.com/">BLOG</a></li>
-					<li class="menu"><a href="#tour">TOUR</a></li>
-					<li class="menu"><a href="#media">MEDIA</a></li>
-					<li class="menu"><a href="http://theworkdayrelease.bigcartel.com/">STORE</a></li>
-					<li class="menu"><a href="#about">ABOUT</a></li>
-					<li class="menu"><a href="#contact">CONTACT</a></li>
-				</ul>
-			</nav>
-			<hr/>
-			<div class="slider">
-				<!-- <img src="img/topbanner1.jpg" />
-				<img src="img/topbanner2.jpg" /> -->
-				<a href="https://itunes.apple.com/us/album/simple-distance/id561505003" target="_blank"><img src="img/simpledistancewebsitebannerNEW.jpg" /></a>
-			</div>
-		</header>
-		<hr/>
-		<div ng-view></div>
-		<footer>
-				<hr>
-				<p>&copy; The Workday Release. All Rights Reserved.</p>
-				<p>Website created by <a href="http://timbits07.github.io" target="_blank">Tim Storey</a></p>
-		</footer>
+	<div id="header_bar">
+		<img id="logo" src="img/theworkdayreleasetopleft.png">
 		<div id="social">
 			<a href="https://www.youtube.com/user/theworkdayrelease"><img src="img/youtube1.png" class="icon" id="youtubebutton"></a>
 			<a href="https://twitter.com/workdayrelease"><img src="img/twitter1.png" class="icon" id="twitterbutton"></a>
@@ -54,6 +27,32 @@
 			<a href="https://play.spotify.com/artist/0CMA9KfXvc2MB5U6uefQk6"><img src="img/spotify1.png" class="icon" id="spotifybutton"></a>
 			<a href="https://itunes.apple.com/us/artist/the-workday-release/id310294970"><img src="img/itunes1.png" class="icon" id="itunesbutton"></a>
 		</div>
+	</div>
+	<section id="wrapper">
+		<header>
+			<div class="slider">
+				<img src="img/websitebanner1024.jpg" />
+				<a href="https://itunes.apple.com/us/album/simple-distance/id561505003" target="_blank"><img src="img/websitebanner2.jpg" /></a>
+				<img src="img/websitebanner3.jpg" />
+			</div>
+			<nav>
+				<ul>
+					<li class="menu"><a href="#home">HOME</a></li>
+					<li class="menu"><a href="http://theworkdayrelease.tumblr.com/">BLOG</a></li>
+					<li class="menu"><a href="#tour">TOUR</a></li>
+					<li class="menu"><a href="#media">MEDIA</a></li>
+					<li class="menu"><a href="http://theworkdayrelease.bigcartel.com/">STORE</a></li>
+					<li class="menu"><a href="#about">ABOUT</a></li>
+					<li class="menu"><a href="#contact">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div ng-view></div>
+		<footer>
+				<hr>
+				<p>&copy; The Workday Release. All Rights Reserved.</p>
+				<p>Website created by <a href="http://timbits07.github.io" target="_blank">Tim Storey</a></p>
+		</footer>
 	</section>
 </body>
 </html>

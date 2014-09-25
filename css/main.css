@@ -54,6 +54,8 @@ HEADER
 
 #logo {
 	margin-left: 25px;
+	margin-top: 8px;
+	height: 20px;
 }
 
 /************************
@@ -97,6 +99,11 @@ nav a:hover {
 .slider {
 	margin-top: 37px;
 	margin-bottom: 15px;
+	width: 100%;
+}
+
+.slider img {
+	width: 100%;
 }
 
 

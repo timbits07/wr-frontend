@@ -30,18 +30,6 @@ $(document).ready(function(){
 	$('#youtubebutton').mouseleave(function(){
 		$(this).attr("src", "/img/youtube1.png");
 	});
-	$('#soundcloudbutton').mouseover(function(){
-		$(this).attr("src", "/img/soundcloud2.png");
-	});
-	$('#soundcloudbutton').mouseleave(function(){
-		$(this).attr("src", "/img/soundcloud1.png");
-	});
-	$('#spotifybutton').mouseover(function(){
-		$(this).attr("src", "/img/spotify2.png");
-	});
-	$('#spotifybutton').mouseleave(function(){
-		$(this).attr("src", "/img/spotify1.png");
-	});
 	$('#tumblrbutton').mouseover(function(){
 		$(this).attr("src", "/img/tumblr2.png");
 	});
@@ -49,10 +37,10 @@ $(document).ready(function(){
 		$(this).attr("src", "/img/tumblr1.png");
 	});
 	$('#itunesbutton').mouseover(function(){
-		$(this).attr("src", "/img/itunes2.png");
+		$(this).attr("src", "/img/apple2.png");
 	});
 	$('#itunesbutton').mouseleave(function(){
-		$(this).attr("src", "/img/itunes1.png");
+		$(this).attr("src", "/img/apple1.png");
 	});
 
 

@@ -7,7 +7,7 @@ a {
 }
 
 body {
-	background-color: #FFF;
+	background: url(../img/websitetextureBG.jpg);
 }
 
 hr {
@@ -43,19 +43,32 @@ p {
 HEADER
 ************************/
 
-#header_bar {
-	position: fixed;
-	top: 0;
+.slider {
+	margin-bottom: 15px;
 	width: 100%;
-	height: 37px;
-	background: url(../img/barabovebanner.jpg);
-	z-index: 1;
 }
 
-#logo {
-	margin-left: 25px;
-	margin-top: 8px;
-	height: 20px;
+.slider img {
+	width: 100%;
+}
+
+
+
+/************************
+SOCIAL BAR
+************************/
+
+#social {
+	z-index: 10;
+	position: absolute;
+	margin-top: -65px;
+	right: 20px;
+}
+
+.icon {
+	display: inline-block;
+	height: 25px;
+	margin: 10px 8px;
 }
 
 /************************
@@ -66,6 +79,7 @@ nav {
 	max-width: 1024px;
 	padding: 0;
 	height: 22px;
+	margin-bottom: 100px;
 }
 
 nav ul {
@@ -96,25 +110,12 @@ nav a:hover {
 	color: #B93E40;
 }
 
-.slider {
-	margin-top: 37px;
-	margin-bottom: 15px;
-	width: 100%;
-}
-
-.slider img {
-	width: 100%;
-}
-
-
-
 /************************
 PAGE: HOME
 ************************/
 #news {
 	float: left;
 	max-width: 55%;
-	margin-top: 30px 0 0 0;
 }
 
 #news img{
@@ -130,10 +131,13 @@ PAGE: HOME
 	font-family: 'Montserrat', serif;
 }
 
+#twitter {
+	margin: 50px 0;
+}
+
 #instagram {
 	float: right;
 	max-width: 45%;
-	margin: 18px 0 0 0;
 }
 
 #instagram h2 {
@@ -160,9 +164,6 @@ PAGE: HOME
 PAGE: TOUR DATES
 ************************/
 
-#tour-dates {
-	margin-top: 30px;
-}
 
 
 /************************
@@ -172,7 +173,6 @@ PAGE: ABOUT
 #about-photo {
 	max-width: 35%;
 	padding-left: 12.5%;
-	margin-top: 80px;
 	margin-bottom: 125px;
 	float: left;
 }
@@ -180,7 +180,6 @@ PAGE: ABOUT
 #about-text {
 	max-width: 35%;
 	padding-right: 13%;
-	margin-top: 65px;
 	float: right;
 }
 
@@ -218,7 +217,6 @@ PAGE: CONTACT
 
 #contact-info {
 	text-align: center;
-	margin-top: 65px;
 	margin-bottom: 200px;
 }
 
@@ -232,23 +230,6 @@ PAGE: CONTACT
 
 
 /************************
-SOCIAL BAR
-************************/
-
-#social {
-	float: right;
-	margin-top: -4px;
-}
-
-.icon {
-	display: inline-block;
-	height: 25px;
-	margin: 10px 8px;
-
-}
-
-
-/************************
 FOOTER
 ************************/
 
@@ -256,7 +237,6 @@ footer {
 	width: 100%;
 	clear: both;
 	text-align: center;
-	background-color: #FFF;
 	line-height: 10px;
 }
 

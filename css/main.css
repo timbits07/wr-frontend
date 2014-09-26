@@ -7,7 +7,7 @@ a {
 }
 
 body {
-	background: url(../img/websitetextureBG.jpg);
+	background: #fcfcfc;
 }
 
 hr {
@@ -30,6 +30,8 @@ h3 {
 
 p {
 	font-size: 13px;
+	font-family: Verdana, sans-serif;
+	color: rgb(119, 120, 126);
 }
 
 #wrapper {
@@ -46,6 +48,7 @@ HEADER
 .slider {
 	margin-bottom: 15px;
 	width: 100%;
+	margin-bottom: 30px;
 }
 
 .slider img {
@@ -61,7 +64,7 @@ SOCIAL BAR
 #social {
 	z-index: 10;
 	position: absolute;
-	margin-top: -65px;
+	margin-top: -80px;
 	right: 20px;
 }
 
@@ -79,18 +82,17 @@ nav {
 	max-width: 1024px;
 	padding: 0;
 	height: 22px;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 
 nav ul {
-	margin-left: 6%;
 	padding: 0;
 }
 
 nav li {
 	display: inline-block;
 	margin: 0;
-	padding: 0 4%;
+	padding: 0 5.35%;
 	font-family: 'Montserrat', serif;
 	font-weight: 400;
 	font-size: 14px;
@@ -98,8 +100,13 @@ nav li {
 	border-right: 2px solid black;
 }
 
+nav li:first-child {
+	padding-left: 0;
+}
+
 nav li:last-child {
 	border-right: 0;
+	padding-right: 0;
 }
 
 nav a {
@@ -128,7 +135,18 @@ PAGE: HOME
 }
 
 #news a {
-	font-family: 'Montserrat', serif;
+	font-family: Verdana, serif;
+	font-size: 13px;
+	color: rgb(119, 120, 126);
+}
+
+#news p {
+	white-space: pre-wrap;
+}
+
+#post {
+	padding: 10px;
+	background-color: #FFF;
 }
 
 #twitter {
@@ -179,8 +197,11 @@ PAGE: ABOUT
 
 #about-text {
 	max-width: 35%;
-	padding-right: 13%;
+	padding: 10px;
+	margin-right: 13%;
 	float: right;
+	background-color: #fff;
+
 }
 
 
@@ -188,25 +209,12 @@ PAGE: ABOUT
 PAGE: MEDIA
 ************************/
 
-#insta {
-	max-width: 50%;
-	float: left;
-}
-
-#insta h2, #youtube h2, #soundcloud h2 {
-	text-align: center;
-	padding-bottom: 15px;
-	font-family: 'Montserrat', serif;
-}
-
-#youtube {
-	float: right;
-	width: 50%;
+.media_block {
+	padding: 25px 0;
 }
 
 #soundcloud {
-	margin-bottom: 30px;
-	margin-top: 20px;
+	padding-top: 0;
 }
 
 
@@ -238,6 +246,7 @@ footer {
 	clear: both;
 	text-align: center;
 	line-height: 10px;
+	background: url(../img/footer.jpg);
 }
 
 footer hr {

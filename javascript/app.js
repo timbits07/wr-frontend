@@ -28,7 +28,7 @@ twrApp.config(function($routeProvider) {
       });
 });
 
-twrApp.controller('siteCtrl', function($scope, $http, $timeout){
+twrApp.controller('siteCtrl', function($scope, $http){
   $http({method: 'GET', url: 'http://twrblog.herokuapp.com/posts.json'}).
   success(function(data, status, headers, config) {
     $scope.post = data;

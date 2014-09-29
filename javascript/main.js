@@ -43,5 +43,18 @@ $(document).ready(function(){
 		$(this).attr("src", "/img/apple1.png");
 	});
 
+	$(function() {
+	  $(".menu").click(function() {
+	    // remove classes from all
+	    $(".menu").removeClass("active");
+	    // add class to the one we clicked
+	    $(this).addClass("active");
+	  });
+	});
+
+	$(window).scroll(function() {
+    ($(window).scrollTop() > 300) ? $('.navbar').addClass('fixed') : $('.navbar').removeClass('fixed');
+	});
+
 
 })

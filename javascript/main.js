@@ -53,7 +53,8 @@ $(document).ready(function(){
 	});
 
 	$(window).scroll(function() {
-    ($(window).scrollTop() > 300) ? $('.navbar').addClass('fixed') : $('.navbar').removeClass('fixed');
+		var scrollTop = 475;
+    ($(window).scrollTop() >= scrollTop) ? $('.navbar').addClass('fixed') : $('.navbar').removeClass('fixed');
 	});
 
 

@@ -257,6 +257,7 @@ footer {
 	width: 100%;
 	clear: both;
 	background: url(../img/footer.jpg);
+	margin-top: 30px;
 }
 
 #footer_wrapper {
@@ -266,10 +267,16 @@ footer {
 
 .footer_column {
 	width: 30%;
-	float: left;
+	margin: 0 auto;
 	text-align: center;
-	color: #FFF;
-	margin: 0 1.5%;
+}
+
+.email {
+	float: left;
+}
+
+.sign_up {
+	float: right;
 }
 
 #copyright {
@@ -285,8 +292,17 @@ footer {
 }
 
 #mc_embed_signup {
-	color: #FFF;
 	clear: left; 
 	font: 14px Verdana,Arial,sans-serif;  
-	width: 400px;
+	width: 325px;
+}
+
+#mc_embed_signup label {
+	color: #FFF;
+	font-family: 'Montserrat', serif;
+	font-size: 14px;
+}
+
+#footer_social {
+	display: inline-block;
 }

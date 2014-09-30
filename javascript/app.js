@@ -42,6 +42,7 @@ twrApp.controller('homeCtrl', function($scope, $http, $timeout){
   $http({method: 'GET', url: 'http://twrblog.herokuapp.com/posts.json'}).
   success(function(data, status, headers, config) {
     $scope.post = data;
+    console.log(data);
   }).
   error(function(data, status, headers, config) {
     console.log("AJAX failed")

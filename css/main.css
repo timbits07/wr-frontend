@@ -35,6 +35,11 @@ p {
 	width: 100%;
 }	
 
+#break {
+	height: 50px;
+	clear: both;
+}
+
 
 /************************
 HEADER
@@ -279,6 +284,7 @@ footer {
 #footer_wrapper {
 	width: 80%;
 	margin: 0 auto;
+
 }
 
 .footer_column {
@@ -311,7 +317,7 @@ footer {
 	clear: left; 
 	font: 14px Verdana,Arial,sans-serif;  
 	width: 325px;
-	margin-top: 100px;
+	padding-top: 50px;
 }
 
 #mc_embed_signup label {

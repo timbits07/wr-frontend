@@ -67,5 +67,4 @@ $(document).ready(function(){
  //      $stickyEl.toggleClass('fixed', $window.scrollTop() > elTop);
  //  });
 
-
 })

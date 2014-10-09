@@ -52,19 +52,20 @@ $(document).ready(function(){
 	  });
 	});
 
-	// $(window).scroll(function() {
-	// 	var scrollTop = 
- //    ($(window).scrollTop() >= scrollTop) ? $('.navbar').addClass('fixed') : $('.navbar').removeClass('fixed');
-	// });
+	// Sticky navbar on scroll to top of page
+	$(window).scroll(function() {
+		var aboveHeight = ($('header').outerHeight(true)) + 40;
+    ($(window).scrollTop() >= aboveHeight) ? $('.navbar').addClass('fixed') : $('.navbar').removeClass('fixed');
+	});
 
  // Cache selectors outside callback for performance. 
- var $window = $(window),
-     $stickyEl = $('.navbar'),
-     elTop = $stickyEl.offset().top;
+ // var $window = $(window),
+ //     $stickyEl = $('.navbar'),
+ //     elTop = $stickyEl.offset().top;
 
- $window.scroll(function() {
-      $stickyEl.toggleClass('fixed', $window.scrollTop() > elTop);
-  });
+ // $window.scroll(function() {
+ //      $stickyEl.toggleClass('fixed', $window.scrollTop() > elTop);
+ //  });
 
 
 })

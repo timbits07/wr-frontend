@@ -52,10 +52,19 @@ $(document).ready(function(){
 	  });
 	});
 
-	$(window).scroll(function() {
-		var scrollTop = 475;
-    ($(window).scrollTop() >= scrollTop) ? $('.navbar').addClass('fixed') : $('.navbar').removeClass('fixed');
-	});
+	// $(window).scroll(function() {
+	// 	var scrollTop = 
+ //    ($(window).scrollTop() >= scrollTop) ? $('.navbar').addClass('fixed') : $('.navbar').removeClass('fixed');
+	// });
+
+ // Cache selectors outside callback for performance. 
+ var $window = $(window),
+     $stickyEl = $('.navbar'),
+     elTop = $stickyEl.offset().top;
+
+ $window.scroll(function() {
+      $stickyEl.toggleClass('fixed', $window.scrollTop() > elTop);
+  });
 
 
 })

@@ -70,7 +70,7 @@ SOCIAL BAR
 
 .icon {
 	display: inline-block;
-	height: 25px;
+	height: 22px;
 	margin: 10px 8px;
 }
 
@@ -79,7 +79,7 @@ NAVIGATION
 ************************/
 
 nav {
-	width: 7.5%;
+	width: 6.5%;
 	float: left;
 }
 
@@ -100,7 +100,7 @@ nav ul li:first-child {
 	width: 100%;
 	height: 25px;
 	text-align: center;
-	margin: 5px 0;
+	margin: 2px 0;
 	background: #CCC;
 	padding: 0 5px;
 	padding-top: 7px;
@@ -112,7 +112,7 @@ nav ul li:first-child {
 }
 
 .active {
-	background-color: #808d90;
+	background-color: #bf7f7f;
 }
 
 nav a {
@@ -175,7 +175,7 @@ PAGE: HOME
 #instagram {
 	max-width: 35%;
 	float: right;
-	margin-right: 4%;
+	margin-right: 6%;
 }
 
 #instagram h2 {
@@ -326,6 +326,11 @@ footer {
 	font-size: 14px;
 }
 
+#mc-embedded-subscribe {
+	float: right;
+}
+
 #footer_social {
 	display: inline-block;
+	margin-bottom: 20px;
 }

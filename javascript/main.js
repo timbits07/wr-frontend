@@ -58,13 +58,4 @@ $(document).ready(function(){
     ($(window).scrollTop() >= aboveHeight) ? $('.navbar').addClass('fixed') : $('.navbar').removeClass('fixed');
 	});
 
- // Cache selectors outside callback for performance. 
- // var $window = $(window),
- //     $stickyEl = $('.navbar'),
- //     elTop = $stickyEl.offset().top;
-
- // $window.scroll(function() {
- //      $stickyEl.toggleClass('fixed', $window.scrollTop() > elTop);
- //  });
-
 })

@@ -64,7 +64,7 @@ SOCIAL BAR
 #social {
 	z-index: 10;
 	position: absolute;
-	margin-top: -90px;
+	margin-top: -77px;
 	right: 20px;
 }
 
@@ -101,18 +101,18 @@ nav ul li:first-child {
 	height: 25px;
 	text-align: center;
 	margin: 2px 0;
-	background: #CCC;
+	background: #46566A;
 	padding: 0 5px;
 	padding-top: 7px;
 	letter-spacing: 1px;
 }
 
 .menu:hover {
-	background-color: #bf7f7f;
+	background-color: #CCC;
 }
 
 .active {
-	background-color: #bf7f7f;
+	background-color: #CCC;
 }
 
 nav a {

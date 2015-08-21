@@ -1,4 +1,5 @@
-@media screen and (max-width: 1440px) and (min-width: 768px) {
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+	
 	.slider {
 		margin-bottom: 65px;
 	}
@@ -7,8 +8,12 @@
 		margin-top: -102px;
 	}
 
+	#nav-container {
+		margin-bottom: 35px;
+	}
+
 	nav {
-		width: 735px;
+		width: 724px;
 		right: 0;
 		top: -50px;
 		margin: 0 auto;
@@ -17,5 +22,33 @@
 	.menu {
 		display: inline-block;
 		width: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	nav {
+		display: none;
+	}
+
+	#nav-container h3 {
+		text-align: center;
+	}
+
+	#nav-toggle {
+		display: inline-block;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #000;
+	}
+
+	#about-text {
+		margin-top: 35px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#instagram > h2, #instagram > iframe {
+		display: none;
 	}
 }

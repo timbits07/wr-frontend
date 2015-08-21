@@ -36,6 +36,12 @@ p {
 	clear: both;
 }
 
+.clear-fix:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
 
 /************************
 HEADER
@@ -93,8 +99,9 @@ nav ul li:first-child {
 	margin-top: 0;
 }
 
-nav ul a:hover {
+nav ul a:hover, nav ul a:focus {
 	text-decoration: none;
+	color: #FFF;
 }
 
 .menu {
@@ -135,6 +142,13 @@ nav a {
 	display: none;
 }
 
+#slide-nav ul {
+	padding: 0px;
+}
+
+#slide-nav ul a li {
+	color: #FFF;
+}
 
 /************************
 PAGE: HOME
@@ -201,47 +215,8 @@ PAGE: HOME
 }
 
 /************************
-PAGE: TOUR DATES
-************************/
-
-#tour-dates {
-	width: 90%;
-	float: right;
-}
-
-
-/************************
-PAGE: ABOUT
-************************/
-
-#about-photo {
-	max-width: 27%;
-	padding-left: 10%;
-	margin-bottom: 125px;
-	float: right;
-	margin-right: 35px;
-}
-
-#about-text {
-	max-width: 30%;
-	padding: 10px;
-	margin-right: 15%;
-	float: right;
-	background-color: #fff;
-
-}
-
-
-/************************
 PAGE: MEDIA
 ************************/
-
-#media {
-	display: inline-block;
-	float: right;
-	width: 80%;
-	margin-right: 5%;
-}
 
 .media_block {
 	padding: 25px 0;
@@ -260,8 +235,6 @@ PAGE: CONTACT
 #contact-info {
 	text-align: center;
 	margin-bottom: 200px;
-	float: right;
-	width: 90%;
 }
 
 #contact-info p {
@@ -281,18 +254,8 @@ footer {
 	width: 100%;
 	clear: both;
 	background: url(../img/footer.jpg);
-}
-
-#footer_wrapper {
-	width: 80%;
-	margin: 0 auto;
-
-}
-
-.footer_column {
-	width: 30%;
-	margin: 0 auto;
-	text-align: center;
+	padding-top: 50px;
+	margin-top: 50px;
 }
 
 .email {
@@ -323,7 +286,15 @@ footer {
 	clear: left; 
 	font: 14px Verdana,Arial,sans-serif;  
 	width: 325px;
-	padding-top: 50px;
+	margin: 0 auto;
+}
+
+#mc_embed_signup .clear {
+	display: inline-block !important;
+}
+
+#mc_embed_signup input.email {
+	width: 67% !important;
 }
 
 #mc_embed_signup label {
@@ -337,6 +308,7 @@ footer {
 }
 
 #footer_social {
-	display: inline-block;
-	margin-bottom: 20px;
+	display: block;
+	margin: 10px auto 20px auto;
+	width: 250px;
 }

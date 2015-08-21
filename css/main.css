@@ -285,7 +285,7 @@ footer {
 #mc_embed_signup {
 	clear: left; 
 	font: 14px Verdana,Arial,sans-serif;  
-	width: 325px;
+	width: 315px;
 	margin: 0 auto;
 }
 
@@ -295,6 +295,10 @@ footer {
 
 #mc_embed_signup input.email {
 	width: 67% !important;
+}
+
+#mc_embed_signup input.button {
+	min-width: 88px !important;
 }
 
 #mc_embed_signup label {

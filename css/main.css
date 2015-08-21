@@ -31,10 +31,6 @@ p {
 	color: rgb(119, 120, 126);
 }
 
-#wrapper {
-	width: 100%;
-}	
-
 #break {
 	height: 50px;
 	clear: both;
@@ -46,7 +42,6 @@ HEADER
 ************************/
 
 .slider {
-	margin-bottom: 15px;
 	width: 100%;
 	margin-bottom: 40px;
 }
@@ -78,9 +73,15 @@ SOCIAL BAR
 NAVIGATION
 ************************/
 
+#nav-container {
+	position: relative;
+}
+
 nav {
-	width: 6.5%;
-	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 120px;
 }
 
 nav ul {
@@ -92,13 +93,17 @@ nav ul li:first-child {
 	margin-top: 0;
 }
 
+nav ul a:hover {
+	text-decoration: none;
+}
+
 .menu {
 	display: block;
 	font-family: 'Montserrat', serif;
 	font-weight: normal;
 	font-size: 14px;
 	width: 100%;
-	height: 25px;
+	height: 33px;
 	text-align: center;
 	margin: 2px 0;
 	background: #46566A;
@@ -109,6 +114,7 @@ nav ul li:first-child {
 
 .menu:hover {
 	background-color: #CCC;
+	color: #FFF;
 }
 
 .active {
@@ -120,22 +126,19 @@ nav a {
 }
 
 .fixed {
-	position: fixed;
+	position: fixed !important;
 	top: 0;
 	left: 0;
-	display: inline-block;
 }
 
+#slide-nav, #nav-toggle {
+	display: none;
+}
 
 
 /************************
 PAGE: HOME
 ************************/
-#news {
-	width: 50%;
-	float: right;
-	margin-right: 4%;
-}
 
 #news img{
 	max-width: 75%;	
@@ -172,10 +175,9 @@ PAGE: HOME
 	margin: 50px 0;
 }
 
-#instagram {
-	max-width: 35%;
-	float: right;
-	margin-right: 6%;
+#instagram iframe {
+	margin: 0 auto;
+  display: block;
 }
 
 #instagram h2 {

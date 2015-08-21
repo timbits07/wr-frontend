@@ -1,0 +1,21 @@
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+	.slider {
+		margin-bottom: 65px;
+	}
+
+	#social {
+		margin-top: -102px;
+	}
+
+	nav {
+		width: 735px;
+		right: 0;
+		top: -50px;
+		margin: 0 auto;
+	}
+
+	.menu {
+		display: inline-block;
+		width: 100px;
+	}
+}
